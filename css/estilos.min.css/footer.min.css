@@ -1,0 +1,239 @@
+footer {
+  position: relative;
+  z-index: 20;
+  margin-top: -8rem;
+  padding: 5rem 5vw 2rem;
+  background-image: url("../Img/fondofooter.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: #FFFFFF;
+}
+
+#contenido_footer {
+  display: grid;
+  grid-template-columns: 1.2fr auto 1.15fr;
+  align-items: start;
+  column-gap: 2.75rem;
+  max-width: 62rem;
+  margin: 0 auto;
+}
+
+.footer_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_col--idea {
+  align-items: flex-start;
+  position: relative;
+  min-height: 11rem;
+}
+
+.footer_idea {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer_forma {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.35rem 0 0.55rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 1.05;
+}
+
+.footer_flecha {
+  font-weight: 400;
+  font-size: 1.35em;
+  line-height: 1;
+}
+
+.footer_servicios {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer_gracias {
+  margin: 3.5rem 0 0;
+  font-family: "Caveat", cursive;
+  font-size: 1.55rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+}
+
+.footer_col--nav {
+  padding-left: 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.footer_col--nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer_col--nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer_col--nav a:hover {
+  opacity: 0.75;
+}
+
+.footer_linea {
+  width: 2.75rem;
+  height: 1px;
+  margin: 0.85rem 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer_linea--nav {
+  width: 100%;
+  max-width: 7.5rem;
+  margin: 1.1rem 0 0.9rem;
+}
+
+#redes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+#redes a {
+  display: inline-flex;
+  line-height: 0;
+}
+
+#redes img,
+#contenido_footer #behance,
+#contenido_footer .instagram {
+  width: 1.85rem;
+  height: 1.85rem;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.footer_col--marca {
+  align-items: flex-start;
+  position: relative;
+  min-height: 11rem;
+}
+
+.footer_nombre {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer_rol {
+  margin: 0.35rem 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer_descripcion {
+  margin: 0.7rem 0 0;
+  max-width: 16rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #FFFFFF;
+}
+
+#email {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#email:hover {
+  opacity: 0.75;
+}
+
+.footer_ubicacion {
+  margin: auto 0 0;
+  padding-top: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer_ubicacion::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 1px;
+  margin-left: 0.55rem;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 900px) {
+  footer {
+    padding: 3.5rem 1.5rem 2rem;
+  }
+  #contenido_footer {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .footer_col--nav {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .footer_gracias {
+    margin-top: 1.75rem;
+  }
+  .footer_ubicacion {
+    padding-top: 1.5rem;
+  }
+  .footer_col--idea,
+  .footer_col--marca {
+    min-height: 0;
+  }
+}

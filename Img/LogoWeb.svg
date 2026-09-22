@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451.52 434.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b375b0;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: MontserratRoman-Bold, Montserrat;
+        font-size: 139.77px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="218.94" cy="214.39" r="203.79"/>
+  <text class="cls-2" transform="translate(95.8 255.69)"><tspan x="0" y="0">R.B</tspan></text>
+</svg>

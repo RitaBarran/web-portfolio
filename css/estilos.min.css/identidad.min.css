@@ -1,0 +1,200 @@
+.identidad {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4.5rem 5vw 6.5rem;
+  background-image: url("../Img/fondo_sobremi_Mesa de trabajo 1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 122%;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+
+.identidad_contenido {
+  margin-top: 5rem;
+  flex: 0 1 28rem;
+  max-width: 28rem;
+}
+
+.identidad_etiqueta {
+  margin: 0 0 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+.identidad_titulo {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.1rem, 2.8vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #131313;
+}
+
+.identidad_titulo_acento {
+  color: rgb(245, 238, 244);
+}
+
+.identidad_texto {
+  margin: 1.35rem 0 0;
+  max-width: 28rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #131313;
+}
+
+.identidad_boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 2rem;
+  padding: 0.4rem 0.4rem 0.4rem 1.35rem;
+  border: 1.5px solid #B83CE0;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.identidad_boton_texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #131313;
+  white-space: nowrap;
+}
+
+.identidad_boton_separador {
+  width: 1px;
+  height: 1.35rem;
+  background-color: rgba(184, 60, 224, 0.55);
+}
+
+.identidad_boton_icono {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.05rem;
+  height: 2.05rem;
+  border-radius: 50%;
+  background-color: rgba(184, 60, 224, 0.28);
+  color: #131313;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.identidad_boton:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  transform: translateX(3px);
+}
+
+.identidad_visual {
+  position: relative;
+  flex: 0 0 auto;
+  width: min(100%, 17.5rem);
+  aspect-ratio: 1;
+  margin-top: 1rem;
+}
+
+.identidad_forma {
+  position: absolute;
+  left: -6%;
+  bottom: 8%;
+  width: 52%;
+  height: 52%;
+  border-radius: 50%;
+  background-color: rgba(167, 140, 198, 0.5);
+  z-index: 0;
+}
+
+.identidad_foto {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 6% auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(206.6, 191.75, 223.65);
+}
+
+.identidad_foto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  filter: grayscale(1);
+}
+
+.identidad_valores {
+  flex: 0 0 auto;
+  align-self: center;
+  padding-left: 1.1rem;
+  border-left: 1.5px solid #B83CE0;
+}
+
+.identidad_valores ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.identidad_valores li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #131313;
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .identidad {
+    flex-wrap: wrap;
+    gap: 1.5rem 1.75rem;
+  }
+  .identidad_valores {
+    width: 100%;
+    border-left: none;
+    border-top: 1.5px solid #B83CE0;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+  .identidad_valores ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.85rem 1.25rem;
+  }
+}
+@media (max-width: 700px) {
+  .identidad {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 1.5rem;
+  }
+  .identidad_contenido {
+    max-width: 100%;
+  }
+  .identidad_visual {
+    width: min(100%, 15rem);
+    order: -1;
+    align-self: center;
+    margin-top: 0.5rem;
+  }
+}

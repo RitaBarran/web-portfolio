@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rita Barrán</title>
+    <link rel="icon" href="../Img/LogoWeb.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="nav">
+            <h1>
+                <a href="index.html">
+                    <span class="logo-nombre">Rita</span>
+                    <span class="logo-apellido">Barrán</span>
+                </a>
+            </h1>
+
+            <button
+                class="menu_toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="#identidad">Sobre mí</a></li>
+                    <li><a href="#contacto2">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- PORTADA -->
+    <section class="portada">
+
+        <div class="portada_contenido">
+
+            <p class="portada_categoria">Diseño digital - Web</p>
+
+            <h1 class="portada_titulo">
+                <span class="portada_titulo_oscuro">Experiencias visuales</span>
+                <span class="portada_titulo_lila">Que conectan</span>
+            </h1>
+
+            <h2 class="portada_subtitulo">Marcas con personas reales</h2>
+
+            <div class="portada_linea"></div>
+
+            <p class="portada_especialidades">
+                Web - Branding - UX/UI - Diseño visual
+            </p>
+
+            <a href="proyectos.html" class="portada_boton">
+                <span class="portada_boton_texto">Ver proyectos recientes</span>
+                <span class="portada_boton_separador" aria-hidden="true"></span>
+                <span class="portada_boton_icono" aria-hidden="true">→</span>
+            </a>
+
+        </div>
+
+        <div class="portada_visual">
+            <video
+                class="portada_video"
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src="../Img/portada.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+
+        <a href="#destacados" class="portada_scroll" id="btn_explorar">
+            <span class="portada_scroll_icono" aria-hidden="true">
+                <svg viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.5" y="1.5" width="21" height="33" rx="10.5" stroke="currentColor" stroke-width="1.5"/>
+                    <line class="portada_scroll_rueda" x1="12" y1="7" x2="12" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle class="portada_scroll_punto" cx="12" cy="14.5" r="1.4" fill="currentColor"/>
+                    <circle cx="12" cy="19" r="0.9" fill="currentColor" opacity="0.45"/>
+                </svg>
+            </span>
+            <span class="portada_scroll_texto">Scroll para explorar</span>
+        </a>
+
+    </section>
+
+<div id="mas_contenido" class="mas_contenido" hidden>
+
+<!-- PROYECTOS DESTACADOS -->
+
+<section id="destacados">
+   <p class="identidad_etiqueta">PROYECTOS DESTACADOS</p>
+
+    <div id="proyectos_mostrados" class="destacados_carrusel" aria-live="polite">
+
+        <article class="destacado_item is-active" data-index="0">
+            <img class="destacado_imagen" src="../Img/WebFrida.png" alt="Web Frida">
+            <div class="destacado_info">
+                <h3>UX/UI</h3>
+                <p>Creación de web responsive para<br> la marca de ropa FRIDA.</p>
+                <a href="proyectos/frida.html" class="boton_destacados">VER + </a>
+            </div>
+        </article>
+
+        <article class="destacado_item" data-index="1">
+            <img class="destacado_imagen" src="../Img/AppClub.png" alt="App Club">
+            <div class="destacado_info">
+                <h3>UX/UI</h3>
+                <p>Diseño de App para club CulPadel</p>
+                <a href="proyectos/CulPadel.html" class="boton_destacados">VER + </a>
+            </div>
+        </article>
+
+         <article class="destacado_item" data-index="3">
+            <img class="destacado_imagen" src="../Img/disco_Mesa de trabajo 1.png" alt="Disco">
+            <div class="destacado_info">
+                <h3>Diseño web-gráfico</h3>
+                <p>Diseño de tapa de disco<br> ilustraciones, web y piezas gráficas.</p>
+                <a href="proyectos/transformación.html" class="boton_destacados">VER + </a>
+            </div>
+        </article>
+
+        <article class="destacado_item" data-index="2">
+            <img class="destacado_imagen" src="../Img/WebCharan.png" alt="Charán">
+            <div class="destacado_info">
+                <h3>Diseño de marca</h3>
+                <p>Diseño de marca y web para <br>el estudio creativo Charán.</p>
+                <a href="proyectos/charan.html" class="boton_destacados">VER + </a>
+            </div>
+        </article>
+
+        <article class="destacado_item" data-index="3">
+            <img class="destacado_imagen" src="../Img/TapaLibro.png" alt="Libro">
+            <div class="destacado_info">
+                <h3>Diseño editorial</h3>
+                <p>Diseño editorial donde se crearon<br> ilustraciones, tapa, contratapa y enuadernación.</p>
+                <a href="proyectos/Don veridico.html" class="boton_destacados">VER + </a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<!--SOBRE MÍ-->
+
+<section id="identidad" class="identidad">
+
+    <div class="identidad_contenido">
+        <p class="identidad_etiqueta ">Hola, soy Rita</p>
+
+        <h2 class="identidad_titulo">
+            Diseñadora digital <br>con una mirada
+            <span class="identidad_titulo_acento">integral.</span>
+        </h2>
+
+        <p class="identidad_texto">
+            Busco crear diseños limpios, claros y equilibrados,
+            donde cada elemento tenga un propósito y comunique de forma directa lo que
+            el cliente necesita. Me gusta trabajar sin excesos, priorizando lo esencial y
+            buscando siempre un resultado visual que sea funcional y atractivo.
+        </p>
+
+        <a
+            href="https://wa.me/59892810728"
+            class="identidad_boton"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <span class="identidad_boton_texto">Hablemos</span>
+            <span class="identidad_boton_separador" aria-hidden="true"></span>
+            <span class="identidad_boton_icono" aria-hidden="true">→</span>
+        </a>
+    </div>
+
+    <div class="identidad_visual">
+        
+        <div class="identidad_foto">
+            <img src="../Img/FotoPerfil.png" alt="Rita Barrán">
+        </div>
+    </div>
+
+    <aside class="identidad_valores">
+        <ul>
+            <li>Creatividad</li>
+            <li>Entusiasmo</li>
+            <li>Equilibrio</li>
+        </ul>
+    </aside>
+
+</section>
+
+
+<!--FOOTER-->
+
+<footer id="contacto2">
+
+    <div id="contenido_footer">
+
+        <div class="footer_col footer_col--idea">
+            <p class="footer_idea">Una idea</p>
+            <p class="footer_forma">Toma forma</p>
+            <p class="footer_servicios">Diseño · Estrategia · Resultados</p>
+            <p class="footer_gracias">Gracias por estar aquí ♡</p>
+        </div>
+
+        <nav class="footer_col footer_col--nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="#identidad">Sobre mí</a></li>
+                <li><a href="#contacto2">Contacto</a></li>
+            </ul>
+            <div class="footer_linea footer_linea--nav"></div>
+            <div id="redes">
+                <a href="#">
+                    <img src="../Img/instagram_Mesa de trabajo 1.png" alt="Instagram" class="instagram">
+                </a>
+                <a href="https://www.behance.net/ritabarran" target="_blank" rel="noopener noreferrer">
+                    <img src="../Img/behance.png" alt="Behance" id="behance">
+                </a>
+                <a href="https://wa.me/59892810728" target="_blank" rel="noopener noreferrer">
+                    <img src="../Img/whatshap.png" alt="WhatsApp" class="instagram">
+                </a>
+            </div>
+        </nav>
+
+        <div class="footer_col footer_col--marca">
+            <p class="footer_nombre">Rita Barrán</p>
+            <p class="footer_rol">Diseñadora digital</p>
+            <p class="footer_descripcion">Diseño con propósito para marcas que inspiran.</p>
+            <div class="footer_linea"></div>
+            <a href="mailto:barranrita2@gmail.com" id="email">barranrita2@gmail.com</a>
+            <p class="footer_ubicacion">Montevideo, Uruguay</p>
+        </div>
+
+    </div>
+
+</footer>
+
+</div>
+
+<script src="../js/destacados.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/explorar.js"></script>
+
+</body>
+
+</html>

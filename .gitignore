@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.sass-cache/
+css/*.map
+*.map
+.env
+.env.*
+Img/HOME_CHARAN_Mesa de trabajo 1_Mesa de trabajo 1.svg

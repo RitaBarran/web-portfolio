@@ -1,0 +1,157 @@
+@use 'variables' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fuente-principal;
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+header {
+    background-color: $color-fondo;
+    padding: 1.25rem 4rem 0.9rem;
+    box-shadow: 0 4px 10px rgba(41, 41, 41, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-family: $fuente-principal;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+h1 a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-nombre {
+    color: $color-texto;
+}
+
+.logo-apellido {
+    color: $color-principal;
+    font-weight: 600;
+}
+
+.menu_toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.menu_toggle span {
+    display: block;
+    width: 1.45rem;
+    height: 2px;
+    margin-inline: auto;
+    background-color: $color-texto;
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.menu_toggle.is-open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu_toggle.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu_toggle.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+#menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+#menu a {
+    font-family: $fuente-principal;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-texto;
+}
+
+#menu a:hover {
+    color: $color-principal;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 1.5rem;
+    }
+
+    .menu_toggle {
+        display: flex;
+    }
+
+    #menu {
+        position: absolute;
+        top: calc(100% + 0.65rem);
+        left: 0;
+        right: 0;
+        padding: 1rem 1.25rem 1.25rem;
+        background-color: rgba(255, 255, 255, 0.96);
+        border-radius: 0.75rem;
+        box-shadow: 0 10px 28px rgba(41, 41, 41, 0.12);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-0.5rem);
+        pointer-events: none;
+        transition:
+            opacity 0.25s ease,
+            transform 0.25s ease,
+            visibility 0.25s ease;
+    }
+
+    #menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    #menu a {
+        font-size: 0.8rem;
+    }
+}

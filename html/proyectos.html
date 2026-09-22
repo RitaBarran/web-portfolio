@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Rita Barrán</title>
+    <link rel="icon" href="../Img/LogoWeb.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="nav">
+            <h1>
+                <a href="index.html">
+                    <span class="logo-nombre">Rita</span>
+                    <span class="logo-apellido">Barrán</span>
+                </a>
+            </h1>
+
+            <button
+                class="menu_toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="index.html#identidad">Sobre mí</a></li>
+                    <li><a href="index.html#contacto2">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Filtros -->
+    <section class="filtros_proyectos">
+
+        <button type="button" class="filtros filtro_activo" data-filter="todos">
+            TODOS
+        </button>
+
+        <button type="button" class="filtros" data-filter="branding">
+            BRANDING
+        </button>
+
+        <button type="button" class="filtros" data-filter="web">
+            WEB
+        </button>
+
+        <button type="button" class="filtros" data-filter="ux-ui">
+            UX/UI
+        </button>
+
+        <button type="button" class="filtros" data-filter="editorial">
+            EDITORIAL
+        </button>
+
+    </section>
+
+    <!-- GALERÍA -->
+    <div id="proyecto_p"><p class="identidad_etiqueta">PROYECTOS</p></div>
+
+    <section class="project-grid">
+
+        <article class="project project-large" data-category="branding web">
+            <a href="proyectos/frida.html">
+                <div class="project-image">
+                    <img src="../Img/Mockup_web_Frida.png" alt="Proyecto FRIDA">
+                    <div class="project-overlay">
+                        <span>VER PROYECTO</span>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div>
+                        <h2>FRIDA</h2>
+                        <p>Branding · Diseño web</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="project project-large" data-category="branding web">
+            <a href="proyectos/charan.html">
+                <div class="project-image">
+                    <img src="../Img/Mockup_web_charán.png" alt="Proyecto Charan">
+                    <div class="project-overlay">
+                        <span>VER PROYECTO</span>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div>
+                        <h2>CHARÁN</h2>
+                        <p>Branding · Diseño web</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="project project-large" data-category="editorial">
+            <a href="proyectos/Don veridico.html">
+                <div class="project-image">
+                    <img src="../Img/Mockup_DonVerídico.png" alt="Proyecto Don Veridico">
+                    <div class="project-overlay">
+                        <span>VER PROYECTO</span>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div>
+                        <h2>DON VERÍDICO</h2>
+                        <p>Diseño editorial · Ilustración</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="project project-large" data-category="ux-ui">
+            <a href="proyectos/CulPadel.html">
+                <div class="project-image">
+                    <img src="../Img/MockUp_app_padel.png" alt="Proyecto Cul Padel">
+                    <div class="project-overlay">
+                        <span>VER PROYECTO</span>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div>
+                        <h2>CUL PADEL</h2>
+                        <p>UX/UI - Producto digital</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="project project-large" data-category="editorial web">
+            <a href="proyectos/transformación.html">
+                <div class="project-image">
+                    <img src="../Img/Mockup_disco..png" alt="Proyecto Disco Transformación">
+                    <div class="project-overlay">
+                        <span>VER PROYECTO</span>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div>
+                        <h2>TRANSFORMACIÓN</h2>
+                        <p>Diseño editorial · Diseño web</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="project project-large" data-category="web">
+            <a href="proyectos/web Bonnet.html">
+                <div class="project-image">
+                    <img src="../Img/Mockup_web_vinos.png" alt="web vinos">
+                    <div class="project-overlay">
+                        <span>VER PROYECTO</span>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div>
+                        <h2>BONNET</h2>
+                        <p>Diseño web</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <article class="project project-large" data-category="web">
+            <a href="proyectos/webRinconculinarios.html">
+                <div class="project-image">
+                    <img src="../Img/Mockup_web_culinaria.png" alt="web culinaria">
+                    <div class="project-overlay">
+                        <span>VER PROYECTO</span>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div>
+                        <h2>RINCÓN CULINARIO</h2>
+                        <p>Diseño web</p>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+    </section>
+
+    <!--FOOTER-->
+
+<footer id="contacto2">
+
+    <div id="contenido_footer">
+
+        <div class="footer_col footer_col--idea">
+            <p class="footer_idea">Una idea</p>
+            <p class="footer_forma">Toma forma</p>
+            <p class="footer_servicios">Diseño · Estrategia · Resultados</p>
+            <p class="footer_gracias">Gracias por estar aquí ♡</p>
+        </div>
+
+        <nav class="footer_col footer_col--nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="index.html#identidad">Sobre mí</a></li>
+                <li><a href="index.html#contacto2">Contacto</a></li>
+            </ul>
+            <div class="footer_linea footer_linea--nav"></div>
+            <div id="redes">
+                <a href="#">
+                    <img src="../Img/instagram_Mesa de trabajo 1.png" alt="Instagram" class="instagram">
+                </a>
+                <a href="https://www.behance.net/ritabarran" target="_blank" rel="noopener noreferrer">
+                    <img src="../Img/behance.png" alt="Behance" id="behance">
+                </a>
+                <a href="https://wa.me/59892810728" target="_blank" rel="noopener noreferrer">
+                    <img src="../Img/whatshap.png" alt="WhatsApp" class="instagram">
+                </a>
+            </div>
+        </nav>
+
+        <div class="footer_col footer_col--marca">
+            <p class="footer_nombre">Rita Barrán</p>
+            <p class="footer_rol">Diseñadora digital</p>
+            <p class="footer_descripcion">Diseño con propósito para marcas que inspiran.</p>
+            <div class="footer_linea"></div>
+            <a href="mailto:barranrita2@gmail.com" id="email">barranrita2@gmail.com</a>
+            <p class="footer_ubicacion">Montevideo, Uruguay</p>
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="../js/menu.js"></script>
+<script src="../js/filtros.js"></script>
+
+</body>
+
+</html>

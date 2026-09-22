@@ -1,0 +1,323 @@
+.proyecto {
+  background-color: #EEE6ED;
+  padding: 1.25rem 5vw 4.5rem;
+}
+
+.proyecto__volver {
+  margin-bottom: 1.25rem;
+}
+.proyecto__volver a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #a73f00;
+  transition: opacity 0.2s ease;
+}
+.proyecto__volver a:hover {
+  opacity: 0.75;
+}
+
+.info_proyectos {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr);
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  min-height: calc(100dvh - 8.5rem);
+}
+
+.info-proyectos__contenido {
+  max-width: 26rem;
+}
+
+.info-proyectos__categoria {
+  margin: 0 0 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+}
+
+.info-proyectos__titulo {
+  margin: 0 0 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  color: #131313;
+}
+
+.info-proyectos__subtitulo {
+  margin: 0 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: #131313;
+}
+
+.info-proyectos__descripcion {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #5c5c5c;
+}
+
+.info-proyectos__visual {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-height: calc(100dvh - 7.5rem);
+  padding-bottom: 0.5rem;
+}
+.info-proyectos__visual img {
+  display: block;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 14px 32px rgba(19, 19, 19, 0.16);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+  transform-origin: center center;
+}
+.info-proyectos__visual img:first-child {
+  position: relative;
+  z-index: 2;
+  width: auto;
+  max-width: 48%;
+  max-height: calc(100dvh - 8.5rem);
+  margin-top: 0;
+  margin-right: -7%;
+}
+.info-proyectos__visual img:last-child {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  max-width: 70%;
+  max-height: calc(100dvh - 13rem);
+  margin-top: clamp(2rem, 6vh, 4.5rem);
+}
+.info-proyectos__visual img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 18px 40px rgba(19, 19, 19, 0.22);
+  z-index: 3;
+}
+
+.proyecto-proceso {
+  background-color: #f7f1ec;
+  margin: 0 -5vw;
+  padding: 3.25rem 5vw;
+}
+
+.proceso__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.proceso-card {
+  padding: 0 1.5rem;
+}
+.proceso-card:first-child {
+  padding-left: 0;
+}
+.proceso-card:last-child {
+  padding-right: 0;
+}
+.proceso-card:not(:last-child) {
+  border-right: 1px solid rgba(19, 19, 19, 0.12);
+}
+.proceso-card h3 {
+  margin: 0 0 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #131313;
+}
+.proceso-card p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #5c5c5c;
+}
+
+.proceso-card__numero {
+  display: block;
+  margin-bottom: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.4rem, 4vw, 3.25rem);
+  font-weight: 300;
+  line-height: 1;
+  color: #A78CC6;
+}
+
+.proyecto_desarrollo {
+  padding: 3.5rem 0 2.5rem;
+  overflow: visible;
+}
+
+.proyecto_desarrollo__imagen {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.75rem;
+  width: 100%;
+  overflow: visible;
+}
+.proyecto_desarrollo__imagen > div {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 28rem;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+.proyecto_desarrollo__imagen > div:hover {
+  z-index: 10;
+}
+.proyecto_desarrollo__imagen .identidad_etiqueta {
+  margin-bottom: 1rem;
+}
+.proyecto_desarrollo__imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 14px 36px rgba(19, 19, 19, 0.16);
+  cursor: zoom-in;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  backface-visibility: hidden;
+  transition: width 0.35s ease, max-width 0.35s ease, box-shadow 0.35s ease, margin 0.35s ease;
+}
+.proyecto_desarrollo__imagen img:hover {
+  position: relative;
+  width: 145%;
+  max-width: none;
+  margin-left: -22.5%;
+  box-shadow: 0 22px 48px rgba(19, 19, 19, 0.28);
+  image-rendering: auto;
+}
+
+.proyecto_desarrollo__prototipo {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  max-width: 16rem;
+}
+.proyecto_desarrollo__prototipo p {
+  margin: 0 0 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #5c5c5c;
+}
+.proyecto_desarrollo__prototipo a {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #a73f00;
+  transition: opacity 0.2s ease;
+}
+.proyecto_desarrollo__prototipo a:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 900px) {
+  .info_proyectos {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    min-height: 0;
+    margin-bottom: 2.5rem;
+  }
+  .info-proyectos__contenido {
+    max-width: none;
+  }
+  .info-proyectos__visual {
+    max-height: none;
+    justify-content: center;
+  }
+  .info-proyectos__visual img:first-child {
+    max-width: 46%;
+    max-height: 58vh;
+    margin-right: -6%;
+  }
+  .info-proyectos__visual img:last-child {
+    max-width: 66%;
+    max-height: 48vh;
+    margin-top: clamp(1.25rem, 4vh, 2.5rem);
+  }
+  .proceso__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 0;
+  }
+  .proceso-card {
+    padding: 0 1.25rem 0.5rem;
+  }
+  .proceso-card:nth-child(odd) {
+    padding-left: 0;
+  }
+  .proceso-card:nth-child(even) {
+    padding-right: 0;
+    border-right: none;
+  }
+  .proceso-card:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(19, 19, 19, 0.12);
+    padding-bottom: 1.75rem;
+  }
+}
+@media (max-width: 600px) {
+  .proyecto {
+    padding: 1.5rem 1.25rem 3rem;
+  }
+  .proyecto-proceso {
+    margin: 0 -1.25rem;
+    padding: 2.5rem 1.25rem;
+  }
+  .proceso__grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .proceso-card {
+    padding: 0 0 1.5rem !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(19, 19, 19, 0.12);
+  }
+  .proceso-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0 !important;
+  }
+  .proyecto_desarrollo__imagen {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.75rem;
+  }
+  .proyecto_desarrollo__imagen > div {
+    max-width: 34rem;
+    width: 100%;
+  }
+  .proyecto_desarrollo__imagen img:hover {
+    width: 100%;
+    margin-left: 0;
+  }
+}

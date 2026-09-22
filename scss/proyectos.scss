@@ -1,0 +1,224 @@
+@use 'variables' as *;
+
+.filtros_proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 5vw 1.25rem;
+    background-color: $color-fondo;
+}
+
+#proyecto_p {
+    max-width: 68rem;
+    margin: 0 auto;
+    margin-right: 4.5rem;
+    padding: 0.5rem 5vw 1.25rem;
+    background-color: $color-fondo;
+}
+
+#proyecto_p .identidad_etiqueta {
+    margin: 0;
+}
+.filtros_proyectos .filtros {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: $fuente-principal;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $color-texto;
+    transition: color 0.2s ease;
+}
+
+.filtros_proyectos .filtros:hover,
+.filtros_proyectos .filtro_activo {
+    color: $color-principal;
+}
+
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    padding: 0 5vw 4rem;
+    max-width: 65rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    
+}
+
+.project.is-hidden {
+    display: none;
+}
+
+.project > a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: rgba($color-principal, 0.12);
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.35s ease;
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgba(19, 19, 19, 0.45);
+    color: $blanco;
+    font-family: $fuente-principal;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project > a:hover .project-overlay {
+    opacity: 1;
+}
+
+.project > a:hover .project-image img {
+    transform: scale(1.04);
+}
+
+.project-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 0 0.15rem;
+}
+
+.project-info h2 {
+    margin: 0;
+    font-family: $fuente-principal;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-texto;
+}
+
+.project-info p {
+    margin: 0.3rem 0 0;
+    font-family: $fuente-principal;
+    font-size: 0.78rem;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #6b6b6b;
+}
+
+.project-arrow {
+    flex-shrink: 0;
+    font-size: 1.15rem;
+    line-height: 1;
+    color: $color-texto;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .filtros_proyectos {
+        gap: 1.25rem 1.5rem;
+        padding: 1.5rem 1.5rem 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0 1.5rem 3rem;
+        max-width: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .filtros_proyectos {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 1.15rem 0 0.85rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x proximity;
+        scroll-padding-inline: 1.25rem;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .filtros_proyectos .filtros {
+        flex: 0 0 auto;
+        padding: 0.55rem 0.95rem;
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+        white-space: nowrap;
+        scroll-snap-align: start;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .filtros_proyectos .filtros:first-child {
+        margin-left: 1.25rem;
+    }
+
+    .filtros_proyectos .filtros:last-child {
+        margin-right: 1.25rem;
+    }
+
+    .filtros_proyectos .filtros:hover,
+    .filtros_proyectos .filtro_activo {
+        color: $color-principal;
+        background-color: rgba($color-principal, 0.14);
+        border-color: rgba($color-principal, 0.35);
+    }
+
+    #proyecto_p {
+        padding: 0.35rem 1.25rem 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+        margin-top: 1.25rem;
+        padding: 0 1.25rem 3rem;
+    }
+}
